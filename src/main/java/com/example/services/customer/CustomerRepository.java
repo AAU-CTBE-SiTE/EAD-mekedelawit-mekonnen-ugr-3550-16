@@ -1,7 +1,8 @@
-package com.example.customer.repository;
+package com.example.services.customer;
 
-import com.example.customer.model.Customer;
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+@Profile("customer")
 public interface CustomerRepository extends MongoRepository<Customer, String> {
 }
